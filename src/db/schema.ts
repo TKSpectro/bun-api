@@ -20,7 +20,7 @@ export type Account = InferModel<typeof accountSchema>;
 export type Task = InferModel<typeof taskSchema>;
 
 export const AccountETB = t.Object({
-    id: t.Number(),
+    id: t.Optional(t.Number()),
     name: t.String(),
     email: t.String(),
 });

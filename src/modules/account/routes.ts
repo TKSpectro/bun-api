@@ -35,11 +35,21 @@ export const accountRoutes = (app: Elysia) =>
                     }),
                 },
             )
-            .post("/", ({ body }) => ({}), {
-                body: t.Object({
-                    account: AccountETB,
-                }),
-            })
+            .post(
+                "/",
+                ({ body }) => {
+                    const account = db
+                        .insert(accountSchema)
+                        .values(body.account);
+
+                    return { [JSON_KEY]: account };
+                },
+                {
+                    body: t.Object({
+                        account: AccountETB,
+                    }),
+                },
+            )
             .put("/:id", () => "PUT accounts/:id")
             .delete("/:id", () => "DELETE accounts/:id"),
     );
