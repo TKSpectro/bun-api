@@ -1,4 +1,10 @@
 {
+    "editor.codeActionsOnSave": {
+        "quickfix.rome": true,
+        "source.organizeImports.rome": true,
+        "source.fixAll": false,
+        "source.organizeImports": false
+    },
     "[javascript]": {
         "editor.defaultFormatter": "rome.rome"
     },
@@ -7,5 +13,9 @@
     },
     "[json]": {
         "editor.defaultFormatter": "rome.rome"
-    }
+    },
+    "cSpell.words": [
+        "elysia",
+        "elysiajs"
+    ]
 }
