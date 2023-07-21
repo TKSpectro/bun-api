@@ -1,15 +1,7 @@
-# Elysia with Bun runtime
+# bun-api
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
+## Linting and Formatting
 
-## Development
-To start the development server run:
-```bash
-bun run dev
-```
-
-Open http://localhost:3000/ with your browser to see the result.
+We use [Rome](https://rome.tools/) for linting and formatting.
+To run the linter, run `npm run lint` or `npm run lint:fix` to automatically fix some issues.
+To run the formatter, run `npm run format` or `npm run format:fix` to automatically fix some issues.
